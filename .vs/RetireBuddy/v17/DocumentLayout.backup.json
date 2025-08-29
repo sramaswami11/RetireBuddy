@@ -1,0 +1,397 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Siva\\Projects\\AI\\RetireBuddy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\components\\pages\\planner.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\components\\pages\\planner.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\protocol\\planningprotocol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\protocol\\planningprotocol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\services\\taxcalculationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\services\\taxcalculationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\context\\planningcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\context\\planningcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\models\\taxyearmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\models\\taxyearmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\models\\conversionplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\models\\conversionplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\services\\irmaaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\services\\irmaaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\services\\socialsecurityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\services\\socialsecurityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\models\\plannerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\models\\plannerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\agents\\rothconversionadvisoragent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\agents\\rothconversionadvisoragent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\agents\\taxforecasteragent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\agents\\taxforecasteragent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\agents\\socialsecurityplanneragent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\agents\\socialsecurityplanneragent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\agents\\irmaaimpactagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\agents\\irmaaimpactagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\retirebuddy.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\retirebuddy.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|c:\\siva\\projects\\ai\\retirebuddy\\retirebuddy\\retirebuddy.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FC1DD411-71F1-4090-9660-F777598E833A}|RetireBuddy\\RetireBuddy.csproj|solutionrelative:retirebuddy\\retirebuddy.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaxCalculationService.cs",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Services\\TaxCalculationService.cs",
+              "RelativeDocumentMoniker": "RetireBuddy\\Services\\TaxCalculationService.cs",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Services\\TaxCalculationService.cs",
+              "RelativeToolTip": "RetireBuddy\\Services\\TaxCalculationService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAqwB0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T22:31:29.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RothConversionAdvisorAgent.cs",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Agents\\RothConversionAdvisorAgent.cs",
+              "RelativeDocumentMoniker": "RetireBuddy\\Agents\\RothConversionAdvisorAgent.cs",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Agents\\RothConversionAdvisorAgent.cs",
+              "RelativeToolTip": "RetireBuddy\\Agents\\RothConversionAdvisorAgent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T22:28:16.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TaxYearModel.cs",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Models\\TaxYearModel.cs",
+              "RelativeDocumentMoniker": "RetireBuddy\\Models\\TaxYearModel.cs",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Models\\TaxYearModel.cs",
+              "RelativeToolTip": "RetireBuddy\\Models\\TaxYearModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T22:29:31.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlanningContext.cs",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Context\\PlanningContext.cs",
+              "RelativeDocumentMoniker": "RetireBuddy\\Context\\PlanningContext.cs",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Context\\PlanningContext.cs",
+              "RelativeToolTip": "RetireBuddy\\Context\\PlanningContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T22:30:19.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Models\\UserProfile.cs",
+              "RelativeDocumentMoniker": "RetireBuddy\\Models\\UserProfile.cs",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Models\\UserProfile.cs",
+              "RelativeToolTip": "RetireBuddy\\Models\\UserProfile.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T22:29:44.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Planner.razor",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Components\\Pages\\Planner.razor",
+              "RelativeDocumentMoniker": "RetireBuddy\\Components\\Pages\\Planner.razor",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Components\\Pages\\Planner.razor",
+              "RelativeToolTip": "RetireBuddy\\Components\\Pages\\Planner.razor",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwB4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-03T00:59:26.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "RetireBuddy\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "RetireBuddy\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-01T23:24:19.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "RetireBuddy\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "RetireBuddy\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-02T22:35:19.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlanningProtocol.cs",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Protocol\\PlanningProtocol.cs",
+              "RelativeDocumentMoniker": "RetireBuddy\\Protocol\\PlanningProtocol.cs",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Protocol\\PlanningProtocol.cs",
+              "RelativeToolTip": "RetireBuddy\\Protocol\\PlanningProtocol.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwEIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T22:31:05.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "RetireBuddy\\wwwroot\\app.css",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\wwwroot\\app.css",
+              "RelativeToolTip": "RetireBuddy\\wwwroot\\app.css",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAgwKgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-18T19:49:48.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PlannerInput.cs",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Models\\PlannerInput.cs",
+              "RelativeDocumentMoniker": "RetireBuddy\\Models\\PlannerInput.cs",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Models\\PlannerInput.cs",
+              "RelativeToolTip": "RetireBuddy\\Models\\PlannerInput.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T22:29:05.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "RetireBuddy\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "RetireBuddy\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-02T22:35:21.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Components\\App.razor",
+              "RelativeDocumentMoniker": "RetireBuddy\\Components\\App.razor",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Components\\App.razor",
+              "RelativeToolTip": "RetireBuddy\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-02T22:35:05.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConversionPlan.cs",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Models\\ConversionPlan.cs",
+              "RelativeDocumentMoniker": "RetireBuddy\\Models\\ConversionPlan.cs",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Models\\ConversionPlan.cs",
+              "RelativeToolTip": "RetireBuddy\\Models\\ConversionPlan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T22:29:56.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SocialSecurityService.cs",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Services\\SocialSecurityService.cs",
+              "RelativeDocumentMoniker": "RetireBuddy\\Services\\SocialSecurityService.cs",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Services\\SocialSecurityService.cs",
+              "RelativeToolTip": "RetireBuddy\\Services\\SocialSecurityService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T22:39:31.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IrmaaService.cs",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Services\\IrmaaService.cs",
+              "RelativeDocumentMoniker": "RetireBuddy\\Services\\IrmaaService.cs",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Services\\IrmaaService.cs",
+              "RelativeToolTip": "RetireBuddy\\Services\\IrmaaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T22:40:07.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Program.cs",
+              "RelativeDocumentMoniker": "RetireBuddy\\Program.cs",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Program.cs",
+              "RelativeToolTip": "RetireBuddy\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T01:19:57.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TaxForecasterAgent.cs",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Agents\\TaxForecasterAgent.cs",
+              "RelativeDocumentMoniker": "RetireBuddy\\Agents\\TaxForecasterAgent.cs",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Agents\\TaxForecasterAgent.cs",
+              "RelativeToolTip": "RetireBuddy\\Agents\\TaxForecasterAgent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T22:28:31.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SocialSecurityPlannerAgent.cs",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Agents\\SocialSecurityPlannerAgent.cs",
+              "RelativeDocumentMoniker": "RetireBuddy\\Agents\\SocialSecurityPlannerAgent.cs",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Agents\\SocialSecurityPlannerAgent.cs",
+              "RelativeToolTip": "RetireBuddy\\Agents\\SocialSecurityPlannerAgent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T22:28:56.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IRMAAImpactAgent.cs",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Agents\\IRMAAImpactAgent.cs",
+              "RelativeDocumentMoniker": "RetireBuddy\\Agents\\IRMAAImpactAgent.cs",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Agents\\IRMAAImpactAgent.cs",
+              "RelativeToolTip": "RetireBuddy\\Agents\\IRMAAImpactAgent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T22:28:43.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RetireBuddy",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\RetireBuddy.csproj",
+              "RelativeDocumentMoniker": "RetireBuddy\\RetireBuddy.csproj",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\RetireBuddy.csproj",
+              "RelativeToolTip": "RetireBuddy\\RetireBuddy.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-08T20:50:31.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "RetireBuddy\\Components\\Routes.razor",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\Components\\Routes.razor",
+              "RelativeToolTip": "RetireBuddy\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-02T22:34:58.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RetireBuddy.csproj",
+              "DocumentMoniker": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\RetireBuddy.csproj",
+              "RelativeDocumentMoniker": "RetireBuddy\\RetireBuddy.csproj",
+              "ToolTip": "C:\\Siva\\Projects\\AI\\RetireBuddy\\RetireBuddy\\RetireBuddy.csproj",
+              "RelativeToolTip": "RetireBuddy\\RetireBuddy.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-01T22:29:07.462Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
