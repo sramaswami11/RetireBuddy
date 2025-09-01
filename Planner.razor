@@ -1,0 +1,343 @@
+﻿@page "/planner"
+@page "/"
+
+@rendermode InteractiveServer
+@using RetireBuddy.Models
+
+@inject PlanningProtocol Protocol
+
+<h2 class="mb-4">Roth Conversion Optimizer</h2>
+<div class="planner-page">
+    <div class="container py-4">
+        <div class="row">
+            <!-- Left Column: Input Form -->
+            <div class="col-lg-7">
+                <div class="card shadow-sm p-4 mb-4">
+                    <h3 class="mb-4 text-primary">Tax and Roth Conversion Planner</h3>
+
+                    <!-- Row 1: DOB + Filing Status -->
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Date of Birth</label>
+                            <InputDate @bind-Value="dob" class="form-control rounded-3" />
+                            <small class="text-muted">Used to estimate retirement age and RMD timing.</small>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Filing Status</label>
+                            <InputSelect @bind-Value="filingStatus" class="form-select rounded-3 wide-select">
+                                <option value="FilingStatus.Single">Single</option>
+                                <option value="FilingStatus.MarriedFilingJointly">Married Filing Jointly</option>
+                                <option value="FilingStatus.MarriedFilingSeparately">Married Filing Separately</option>
+                            </InputSelect>
+                            
+                            <small class="text-muted">Determines your tax brackets and deductions.</small>
+                        </div>
+                    </div>
+
+
+                    <!-- Row 2: Taxable Income + Social Security -->
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Taxable Income</label>
+                            <InputNumber @bind-Value="taxableIncome" class="form-control rounded-3" />
+                            <small class="text-muted">Your estimated taxable income (excluding conversions).</small>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Social Security Income</label>
+                            <InputNumber @bind-Value="ssi" class="form-control rounded-3" />
+                            <small class="text-muted">Needed to calculate taxable portion of benefits.</small>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Retirement Age + State -->
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Retirement Age</label>
+                            <InputNumber @bind-Value="retirementAge" class="form-control rounded-3" />
+                            <small class="text-muted">When you expect to stop working (affects conversion timing).</small>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">State of Residence</label>
+                            <InputSelect @bind-Value="selectedState" class="form-select rounded-3">
+                                @foreach (var state in stateTaxRates.Keys)
+                                {
+                                    <option value="@state">@state</option>
+                                }
+                            </InputSelect>
+                            <small class="text-muted">Used to apply your state’s income tax rate.</small>
+                        </div>
+                    </div>
+
+                    <!-- Row 4: Total Roth Conversion + Years to Convert -->
+                   @*  <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Total Roth Conversion Amount</label>
+                            <InputNumber @bind-Value="conversionAmount" class="form-control rounded-3" />
+                            <small class="text-muted">Total dollars you plan to convert to Roth IRA.</small>
+                        </div>
+
+                        @if (conversionStrategy != ConversionStrategy.OneShot)
+                        {
+                            <div class="col-md-6">
+                                <label class="form-label">Number of Years to Convert</label>
+                                <InputNumber @bind-Value="conversionYears" class="form-control rounded-3" />
+                                <small class="text-muted">Spread your conversion across multiple years (if applicable).</small>
+                            </div>
+                        }
+                    </div> *@
+                    <!-- Row 4: Total Roth Conversion + Years to Convert -->
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Total Roth Conversion Amount</label>
+                            <InputNumber @bind-Value="conversionAmount" class="form-control rounded-3" />
+                            <small class="text-muted">Total dollars you plan to convert to Roth IRA.</small>
+                        </div>
+
+                        @if (conversionStrategy != ConversionStrategy.OneShot)
+                        {
+                            <div class="col-md-6">
+                                <label class="form-label">Number of Years to Convert</label>
+                                <InputNumber @bind-Value="conversionYears" class="form-control rounded-3" />
+                                <small class="text-muted">Spread your conversion across multiple years (if applicable).</small>
+                            </div>
+                        }
+                    </div>
+
+
+
+                    <!-- Row 5: Conversion Strategy -->
+                   @*  <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Conversion Strategy</label>
+                            <InputSelect @bind-Value="conversionStrategy" class="form-select rounded-3">
+                                <option value="ConversionStrategy.OneShot">One Shot</option>
+                                <option value="ConversionStrategy.EvenSpread">Even Spread</option>
+                            </InputSelect>
+                            <small class="text-muted">Choose to convert all at once or evenly over years.</small>
+                        </div>
+                    </div> *@
+                    <!-- Row 5: Conversion Strategy -->
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Conversion Strategy</label>
+                            <InputSelect @bind-Value="conversionStrategy" class="form-select rounded-3">
+                                <option value="OneShot">One Shot</option>
+                                <option value="EvenSpread">Even Spread</option>
+                            </InputSelect>
+                            <small class="text-muted">Choose to convert all at once or evenly over years.</small>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-4">
+                        <button class="btn btn-primary me-2" @onclick="Simulate">Simulate</button>
+                        <button class="btn btn-secondary ms-2" @onclick="ComputeMaxSafeConversion">
+                            Max Roth Conversion (This Year)
+                        </button>
+                    </div>
+
+                    @if (maxSafeConversion > 0)
+                    {
+                        <div class="alert alert-info mt-3">
+                            Max Safe Conversion This Year (before next bracket / IRMAA):
+                            <strong>@maxSafeConversion.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-US"))</strong>
+
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <!-- Right Column: About / Instructions -->
+            <div class="col-lg-5">
+                <div class="card shadow-sm p-4 mb-4 bg-light">
+                    <h4 class="mb-3 text-primary">About This Planner</h4>
+                    <p>This tool helps you simulate Roth IRA conversions and estimate their impact on your federal and state taxes, including Social Security and IRMAA effects.</p>
+                    <h5 class="mt-3">How to Use:</h5>
+                    <ul>
+                        <li>Enter your Date of Birth and Filing Status.</li>
+                        <li>Provide your taxable income and Social Security income.</li>
+                        <li>Select your state of residence (state taxes are automatically included).</li>
+                        <li>Specify the total Roth conversion amount and over how many years you want to spread it.</li>
+                        <li>Choose the conversion strategy: One Shot or Even Spread.</li>
+                        <li>Click <strong>Simulate</strong> to see your tax projections and max safe conversion for this year.</li>
+                    </ul>
+                    <p class="text-muted small">This is an estimate only and does not constitute tax advice.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Simulation Results Table (unchanged) -->
+        @if (Projections != null && Projections.Any())
+        {
+            <div class="card shadow-sm p-0">
+                <div class="card-header bg-primary text-white">
+                    Simulation Results
+                </div>
+                <div class="table-responsive" style="max-height:500px; overflow-y:auto;">
+                    <table class="table table-hover table-bordered mb-0 custom-striped">
+                        <thead class="custom-table-header sticky-top">
+                            <tr>
+                                <th>Year</th>
+                                <th>Age</th>
+                                <th>Other Taxable Income</th>
+                                <th>Taxable Social Security</th>
+                                <th>Roth Conversion</th>
+                                <th>Adjusted Gross Income</th>
+                                <th>Federal Taxable Income</th>
+                                <th>Federal Tax</th>
+                                <th>State Tax</th>
+                                <th>MAGI (for IRMAA)</th>
+                                <th>IRMAA Tier</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var year in Projections)
+                            {
+                                var irmaaClass = year.IrmaaTier switch
+                                {
+                                    "None" => "bg-success text-white",
+                                    "Tier 1" => "bg-warning text-dark",
+                                    "Tier 2" => "bg-warning text-dark",
+                                    "Tier 3" => "bg-danger text-white",
+                                    "Tier 4" => "bg-danger text-white",
+                                    _ => ""
+                                };
+
+                                <tr>
+                                    <td>@year.Year</td>
+                                    <td>@year.Age</td>
+                                    <td>@year.OtherTaxableIncome.ToString("C")</td>
+                                    <td>@year.TaxableSocialSecurity.ToString("C")</td>
+                                    <td class="bg-info text-white fw-bold">@year.RothConversion.ToString("C")</td>
+                                    <td>@year.AdjustedGrossIncome.ToString("C")</td>
+                                    <td>@year.FederalTaxableIncome.ToString("C")</td>
+                                    <td>@year.FederalTax.ToString("C")</td>
+                                    <td>@year.StateTax.ToString("C")</td>
+                                    <td>@year.MAGI_ForIrmaa.ToString("C")</td>
+                                    <td class="@irmaaClass">@year.IrmaaTier</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+@code {
+    // User inputs
+    private DateTime dob = new DateTime(1963, 1, 1);
+    private FilingStatus filingStatus = FilingStatus.Single;
+    private decimal taxableIncome = 50000;
+    private decimal ssi = 36000;
+    private int retirementAge = 65;
+    private string selectedState = "CA"; // default
+    private decimal conversionAmount = 100000;
+    private int conversionYears = 5;
+    private ConversionStrategy _conversionStrategy = ConversionStrategy.EvenSpread;
+    private ConversionStrategy conversionStrategy
+    {
+        get => _conversionStrategy;
+        set
+        {
+            _conversionStrategy = value;
+            if (value == ConversionStrategy.OneShot)
+            {
+                // Behind the scenes: force years = 1 when One Shot is chosen
+                conversionYears = 1;
+            }
+        }
+    }
+
+    private string GetFilingStatusLabel(FilingStatus status) =>
+       status switch
+       {
+           FilingStatus.Single => "Single",
+           FilingStatus.MarriedFilingJointly => "Married Filing Jointly",
+           _ => status.ToString()
+       };
+
+
+    // State tax mapping
+    private Dictionary<string, decimal> stateTaxRates = new()
+    {
+        {"AL", 0.05m}, {"AK", 0.0m}, {"AZ", 0.045m}, {"AR", 0.065m},
+        {"CA", 0.09m}, {"CO", 0.0463m}, {"CT", 0.065m}, {"DE", 0.066m},
+        {"FL", 0.0m}, {"GA", 0.0575m}, {"HI", 0.08m}, {"ID", 0.065m},
+        {"IL", 0.0495m}, {"IN", 0.0323m}, {"IA", 0.0853m}, {"KS", 0.057m},
+        {"KY", 0.05m}, {"LA", 0.06m}, {"ME", 0.0715m}, {"MD", 0.0575m},
+        {"MA", 0.05m}, {"MI", 0.0425m}, {"MN", 0.0785m}, {"MS", 0.05m},
+        {"MO", 0.054m}, {"MT", 0.066m}, {"NE", 0.0684m}, {"NV", 0.0m},
+        {"NH", 0.0m}, {"NJ", 0.0635m}, {"NM", 0.049m}, {"NY", 0.0685m},
+        {"NC", 0.0525m}, {"ND", 0.027m}, {"OH", 0.048m}, {"OK", 0.05m},
+        {"OR", 0.09m}, {"PA", 0.0307m}, {"RI", 0.059m}, {"SC", 0.07m},
+        {"SD", 0.0m}, {"TN", 0.0m}, {"TX", 0.0m}, {"UT", 0.0495m},
+        {"VT", 0.08m}, {"VA", 0.0575m}, {"WA", 0.0m}, {"WV", 0.065m},
+        {"WI", 0.0765m}, {"WY", 0.0m}
+    };
+
+    // Results
+    private List<TaxYearModel> Projections;
+    private decimal maxSafeConversion;
+
+    // Hold PlannerInput as a field
+    private PlannerInput input;
+
+    private void Simulate()
+    {
+        // Build user profile from form inputs
+        var profile = new UserProfile
+        {
+            DateOfBirth = dob,
+            FilingStatus = filingStatus,
+            TaxableIncome = taxableIncome > 0 ? taxableIncome : 0,
+            SocialSecurityIncome = ssi,
+            RetirementAge = retirementAge,
+            StateTaxRate = stateTaxRates.ContainsKey(selectedState) ? stateTaxRates[selectedState] : 0
+        };
+
+        // Build PlannerInput
+        input = new PlannerInput
+        {
+            Profile = profile,
+            Plan = new ConversionPlan
+            {
+                TotalAmountToConvert = conversionAmount,
+                NumberOfYears = conversionYears,
+                Strategy = conversionStrategy
+            }
+        };
+
+        Protocol.SetPlan(input);
+        Protocol.SimulatePlan();
+
+        Projections = Protocol.TaxProjections.ToList();
+
+        // Update max safe conversion
+        maxSafeConversion = Protocol.CalculateMaxSafeConversion(profile, input.Plan);
+    }
+
+    private void ComputeMaxSafeConversion()
+    {
+        var profile = new UserProfile
+        {
+            DateOfBirth = dob,
+            FilingStatus = filingStatus,
+            TaxableIncome = taxableIncome,
+            SocialSecurityIncome = ssi,
+            RetirementAge = retirementAge,
+            StateTaxRate = stateTaxRates.ContainsKey(selectedState) ? stateTaxRates[selectedState] : 0
+        };
+
+        var plan = new ConversionPlan
+        {
+            TotalAmountToConvert = conversionAmount,
+            NumberOfYears = conversionYears,
+            Strategy = conversionStrategy
+        };
+
+        maxSafeConversion = Protocol.CalculateMaxSafeConversion(profile, plan);
+    }
+}
