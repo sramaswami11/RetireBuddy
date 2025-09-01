@@ -6,7 +6,8 @@ using System.Globalization;
 var builder = WebApplication.CreateBuilder(args);
 
 // ? Force US culture for correct $ formatting
-var cultureInfo = new CultureInfo("en-US");
+var usCulture = new CultureInfo("en-US");
+usCulture.NumberFormat.CurrencySymbol = "$";
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
