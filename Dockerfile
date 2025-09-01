@@ -17,6 +17,15 @@ RUN dotnet publish -c Release -o /app/publish
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS final
 WORKDIR /app
 
+# ? Install ICU for globalization (fixes $ showing as ¤)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libc6 \
+    libicu-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# ? Enable full globalization support
+ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
+
 # Copy published output from build stage
 COPY --from=build /app/publish .
 
