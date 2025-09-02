@@ -8,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 // ? Force US culture for correct $ formatting
 var usCulture = new CultureInfo("en-US");
 usCulture.NumberFormat.CurrencySymbol = "$";
+CultureInfo.DefaultThreadCurrentCulture = usCulture;
+CultureInfo.DefaultThreadCurrentUICulture = usCulture;
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
